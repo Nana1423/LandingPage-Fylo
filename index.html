@@ -5,42 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fylo - Landing Page</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
+        <div class="container-fluid navbar-container">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.svg" alt="Fylo Logo">
+                <img src="images/logo.svg" alt="Fylo Logo" class="img-logo">
             </a>
-            <ul class="navbar-nav d-flex justify-content-end flex-row space-evently">
-                <li class="nav-item me-4">
-                    <a class="nav-link active" href="#">Features</a>
+            <ul class="navbar-nav d-flex  flex-row  ">
+                <li class="nav-item me-5 item-features">
+                    <a class="nav-link active text-white" href="#">Features</a>
                 </li>
-                <li class="nav-item me-4">
-                    <a class="nav-link active" href="#">Team</a>
+                <li class="nav-item me-5 item-teams">
+                    <a class="nav-link active text-white" href="#">Team</a>
                 </li>
-                <li class="nav-item me-4">
-                    <a class="nav-link active" href="#">Sign in</a>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Sign in</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Section Hero -->
-    <section class="hero" >
-        <img src="images/illustration-intro.png" alt="Illustration Intro" style="width:300px">
-        <h2>All your files in one secure location accessible anywhere</h2>
-        <p>Fylo stores all your most important files in one secure location.</p>
-        <p>Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-        <button class="btn btn-info">Get Started</button>
+    <section class="hero">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <img class="img-fluid" src="images/illustration-intro.png" alt="Illustration Intro" style="width:500px">
+            <h2 class="main-title">
+                All your files in one secure location, <br>
+                accessible anywhere.
+            </h2>
+            <p class="main-title-text">
+                Fylo stores all your most important files in one secure location.<br>
+                Access them wherever you need, share and collaborate with<br>
+                friends family, and co-workers.
+            </p>
+            <button class="btn btn-info rounded-pill btn-get-started">Get Started</button>
+            <img class="bg-curvy-desktop" src="images/bg-curvy-desktop.svg" alt="Background Curvy Desktop">
+        </div>
     </section>
-    <section></section>
+    <!-- Section Attributes -->
+    <section class="section-attributes main-bg">
+        <div class="container">
+            <div class="row container-attributes ">
+                <div class="col-attributes col-md-6 item-right">
+                    <img class="attributes-img " src="images/icon-access-anywhere.svg" alt="Access Anywhere Icon">
+                    <h3 class="attributes-title">Access your files, anywhere</h3>
+                    <p class="attributes-text">The ability to use a smartphone, tablet, or computer to access your account means your filles follow you everywhere.</p>
+                </div>
+                <div class="col-attributes col-md-6 item-left">
+                    <img class="attributes-img" src="images/icon-security.svg" alt="Security Icon">
+                    <h3 class="attributes-title">Security you can trust</h3>
+                    <p class="attributes-text">2-factor authentication and user-controleed encryption are just a couple of the security features we allow to help secure your files.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-attributes col-md-6 item-right">
+                    <img class="attributes-img" src="images/icon-collaboration.svg" alt="Collaboration Icon">
+                    <h3 class="attributes-title">Real-time collaboration</h3>
+                    <p class="attributes-text">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+                </div>
+                <div class="col-attributes col-md-6 item-left">
+                    <img class="attributes-img" src="images/icon-any-file.svg" alt="Any File Icon">
+                    <h3 class="attributes-title">Store any type of file</h3>
+                    <p class="attributes-text">Whether you're sharing holidays photos to work documents. Fulo has you covered allowing for all file types to be securely stored and shared.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section></section>
     <section></section>
     <form action=""></form>

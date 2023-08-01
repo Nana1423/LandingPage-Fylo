@@ -1,20 +1,149 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    background-color: hsl(218, 28%, 13%) !important;
+    background-color: hsl(217, 28%, 15%) !important;
     color: white !important;
+}
+
+.main-bg {
+    background-color: hsl(218, 28%, 13%);
 }
 
 /* Navbar */
 
+.navbar-container{
+    margin: 20px 50px 20px 50px;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.img-logo {
+    width: 150px;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 560px){
+    .navbar-container{
+        margin: 20px 10px 20px 10px;
+    }
+
+    .img-logo {
+        width: 100px;
+    }
+
+    .item-features, .item-teams{
+        margin-right: 20px !important;
+    }
+}
 
 /* Section Hero */
 
 .hero {
+    margin-top: 20px;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+.main-title, .main-title-text{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-info {
+    font-weight: bold;
+    width: 250px;
+}
+
+.bg-curvy-desktop {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-get-started{
+    color: white;
+}
+
+.btn-get-started:hover{
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+}
+
+@media (max-width: 770px){
+    .main-title{
+        font-size: 1.4rem;
+    }
+
+    .main-title-text{
+        font-size: 11px;
+    }
+
+    .hero {
+        padding-bottom: 50px;
+    }
+}
+
+/* Section Attributes */
+
+.section-attributes {
+    padding-top: 50px;
+}
+
+.col-attributes{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
 }
+
+.item-right{
+    padding: 0 40px 0 20%;
+}
+
+.item-left{
+    padding: 0 20% 0 40px;
+}
+
+.attributes-title {
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.attributes-text{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.attributes-img {
+    height: 88px;
+    width: auto;
+}
+
+@media (max-width: 770px){
+
+    .section-attributes{
+        flex-direction: column;
+    }
+
+    .attributes-title{
+        font-size: 0.8rem;
+    }
+
+    .attributes-text{
+        font-size: 0.5rem;
+    }
+
+
+    .item-right, .item-left{
+        padding: 0 10% 0 10%;
+    }
+    
+} 
