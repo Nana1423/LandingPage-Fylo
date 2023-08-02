@@ -9,9 +9,14 @@ body {
     background-color: hsl(218, 28%, 13%);
 }
 
+.text {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
 /* Navbar */
 
-.navbar-container{
+.navbar-container {
     margin: 20px 50px 20px 50px;
     font-size: 0.8rem;
     font-weight: 300;
@@ -26,8 +31,8 @@ body {
     text-decoration: underline;
 }
 
-@media (max-width: 560px){
-    .navbar-container{
+@media (max-width: 560px) {
+    .navbar-container {
         margin: 20px 10px 20px 10px;
     }
 
@@ -35,7 +40,8 @@ body {
         width: 100px;
     }
 
-    .item-features, .item-teams{
+    .item-features,
+    .item-teams {
         margin-right: 20px !important;
     }
 }
@@ -48,7 +54,8 @@ body {
     position: relative;
 }
 
-.main-title, .main-title-text{
+.main-title,
+.main-title-text {
     margin-top: 20px;
     text-align: center;
 }
@@ -65,21 +72,21 @@ body {
     width: 100%;
 }
 
-.btn-get-started{
+.btn-get-started {
     color: white;
 }
 
-.btn-get-started:hover{
+.btn-get-started:hover {
     background-color: hsl(176, 68%, 64%);
     color: white;
 }
 
-@media (max-width: 770px){
-    .main-title{
+@media (max-width: 770px) {
+    .main-title {
         font-size: 1.4rem;
     }
 
-    .main-title-text{
+    .main-title-text {
         font-size: 11px;
     }
 
@@ -94,7 +101,7 @@ body {
     padding-top: 50px;
 }
 
-.col-attributes{
+.col-attributes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,11 +110,11 @@ body {
     text-align: center;
 }
 
-.item-right{
+.item-right {
     padding: 0 40px 0 20%;
 }
 
-.item-left{
+.item-left {
     padding: 0 20% 0 40px;
 }
 
@@ -117,33 +124,280 @@ body {
     font-weight: bold;
 }
 
-.attributes-text{
-    font-size: 0.7rem;
-    font-weight: 400;
-}
-
 .attributes-img {
     height: 88px;
     width: auto;
 }
 
-@media (max-width: 770px){
+@media (max-width: 770px) {
 
-    .section-attributes{
+    .section-attributes {
         flex-direction: column;
     }
 
-    .attributes-title{
+    .attributes-title {
         font-size: 0.8rem;
     }
 
-    .attributes-text{
+    .attributes-text {
         font-size: 0.5rem;
     }
 
 
-    .item-right, .item-left{
+    .item-right,
+    .item-left {
         padding: 0 10% 0 10%;
     }
-    
-} 
+
+}
+
+/* Section SP */
+
+.section-SP {
+    display: flex;
+    padding: 100px 10% 100px 10%;
+}
+
+.SP-img {
+    width: 500px;
+    padding-right: 40px;
+}
+
+.containerSP {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+}
+
+.a-SP-text {
+    color: hsl(176, 68%, 64%);
+}
+
+.favicon-icon {
+    width: 12px;
+}
+
+.a-SP-text:hover {
+    color: white;
+}
+
+@media (max-width: 915px) {
+
+    .section-SP {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 15% 100px 15%;
+    }
+
+    .SP-img {
+        width: 350px;
+        padding-right: 0;
+    }
+
+    .containerSP {
+        align-items: center;
+    }
+}
+
+/* Section Team */
+
+.section-team {
+    padding-bottom: 200px;
+}
+
+.section-team-img {
+    position: absolute;
+    margin-top: -64px;
+    margin-left: -40px;
+    width: 40px;
+}
+
+.container-team {
+    background-color: hsl(219, 30%, 18%);
+    position: relative;
+    padding: 40px 20px 20px 20px;
+    margin: 10px;
+}
+
+.container-team-member {
+    display: flex;
+}
+
+.container-team-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.container-team-member-details {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.section-team-name {
+    font-weight: bold;
+}
+
+.section-team-description {
+    font-weight: 300;
+}
+
+.section-team-name,
+.section-team-description {
+    margin-bottom: 0;
+}
+
+@media (max-width: 770px) {
+    .col {
+        flex-basis: 100%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-teams {
+        padding: 0 50px 0 50px;
+    }
+}
+
+/* Section Form */
+
+.container-form {
+    background-color: hsl(217, 28%, 15%);
+    padding: 30px 50px 30px 50px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 1;
+}
+
+input {
+    margin: 0 20px 0 0;
+    width: 70%;
+    height: 38px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+input::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 100%;
+    transform: translateY(-50%);
+    color: grey;
+    font-size: 12px;
+}
+
+.btn-form {
+    width: auto;
+    color: white;
+    font-size: 12px;
+}
+
+.btn-form:hover {
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+}
+
+form>p {
+    text-align: center;
+}
+
+@media (max-width: 770px){
+    .container-input{
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .btn-form{
+        width: 100%;
+    }
+}
+
+/* Footer */
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding: 200px 50px 50px 50px;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-text{
+    width: 30%;
+    justify-content: center;
+}
+
+.footer-contactInfo{
+    width: 20%;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+.footer-links > a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links > a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-socialMedia{
+    width: 10%;
+}
+
+.footer-icon{
+    width: 30px;
+}
+
+.div-footer-items{
+    padding: 0 20px 0 20px;
+}
+
+@media (max-width: 770px) {
+
+    footer, .container-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .div-footer-items{
+        width: 100%;
+        padding-top: 20px;
+    }
+}
