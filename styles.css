@@ -346,6 +346,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 30px;
 }
 
 .footer-text{
@@ -355,15 +356,23 @@ footer{
 }
 
 .footer-contactInfo{
+    display: flex;
+    flex-direction: column;
     width: 30%;
     justify-content: center;
+    gap: 10px;
+}
+
+.footer-contactInfo > p {
+    margin: 0;
 }
 
 .footer-div-links{
     width: 30%;
     display: flex;
     flex-direction: inline;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
@@ -401,6 +410,8 @@ footer{
 .footer-icon-socialMedia{
     font-size: 30px;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .footer-icon{
@@ -408,7 +419,8 @@ footer{
 }
 
 .div-footer-items{
-    padding: 0 20px 0 20px;
+    display: flex;
+    gap: 20px;
 }
 
 @media (max-width: 770px) {
@@ -432,7 +444,7 @@ footer{
 
     .footer-div-links{
         display: flex;
-        gap: 10%;
+        gap: 40%;
     }
 }
 
