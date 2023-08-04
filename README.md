@@ -4,12 +4,12 @@ Fylo Landing Page is a sleek and intuitive web application designed to showcase 
 
 - [Live Demo](https://fylo-landing-page-pink.vercel.app/)
 
-### Features
+## Features
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
