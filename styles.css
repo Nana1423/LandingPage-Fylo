@@ -362,7 +362,7 @@ footer{
 .footer-div-links{
     display: flex;
     flex-direction: inline;
-    gap: 20%;
+    justify-content: space-evenly;
 }
 
 .footer-links{
